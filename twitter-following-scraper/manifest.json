@@ -1,1 +1,20 @@
-
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/128.png",
+         "48": "icons/48.png",
+         "32": "icons/32.png",
+         "16": "icons/16.png"
+      },
+      "default_popup": "popup/popup.html"
+   },
+   "content_scripts": [ {
+      "matches": ["https://www.x.com/*"],
+      "js": [ "scripts/content.js" ]
+   } ],
+   "description": "Scrape Following info from Your Target Page in Twitter (Pure js/no API/no behind the scenes activities)",
+   "manifest_version": 3,
+   "name": "Twitter Following Scraper (by v-User)",
+   "permissions": [ "activeTab" ],
+   "version": "1.2.0"
+}
